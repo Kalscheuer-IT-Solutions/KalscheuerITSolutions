@@ -23,6 +23,12 @@ html, body {
     font-family: 'SofiaPro', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
 nav a, a {
     text-decoration: none;
     color: #000; /* your base color */
@@ -48,7 +54,8 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0px 120px;
+    width: 100%;
+    padding: 0px 10rem;
     margin-top: 0px;
 }
 
@@ -56,3 +63,18 @@ h1 {
     color: #1F6F78;
 }
 
+@media (max-width: 768px) { 
+    .header .content-wrapper, .footer .content-wrapper {
+        padding: 0px 1rem;
+    }
+
+    .content-wrapper {
+        max-width: 100%;
+        padding: 0px 2rem;
+        margin-top: 100px;
+    }
+
+    html, body {
+        font-size: 14px; /* Adjust base font size for smaller screens */
+    }
+}

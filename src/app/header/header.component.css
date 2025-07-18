@@ -8,6 +8,7 @@
     right:0;
     z-index: 1000;
     background-color: white;
+    width: 100%;
 }
 
 .logo-link {
@@ -36,4 +37,15 @@ nav a:hover {
     width: 32px;
     display: inline-block; /* makes margin work nicely */
     margin-left: 1.5rem;
+}
+
+@media (max-width: 768px) { 
+    .header {
+        height: 100px; /* Adjust height for smaller screens */
+    }
+
+    .icons {
+        width: 24px; /* Adjust icon size for smaller screens */
+        margin-left: 1rem;
+    }
 }

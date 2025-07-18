@@ -58,4 +58,14 @@ export class AppComponent implements OnInit{
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.isScrolled = false;
     }
+
+    @HostListener('window:resize')
+    onResize() {
+        this.setVh();
+    }
+
+    private setVh() {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
 }
