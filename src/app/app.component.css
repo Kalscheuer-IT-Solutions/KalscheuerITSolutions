@@ -1,0 +1,42 @@
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* optional */
+}
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    background-color: rgba(17, 0, 158, 0.5);
+    opacity: 0;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    background-color: rgba(196, 176, 255, 1);
+    opacity: 1;
+}
+
+.back-to-top img {
+    width: 32px; /* size your PNG */
+    display: block;
+}

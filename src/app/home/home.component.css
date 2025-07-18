@@ -1,0 +1,9 @@
+.home-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* adjust as needed */
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1F6F78;
+}

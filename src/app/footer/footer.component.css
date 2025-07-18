@@ -1,0 +1,7 @@
+footer {
+    height: 95px;
+    padding: 20px;
+    text-align: right;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, #1F6F78, #93E4C1) 100;
+}
